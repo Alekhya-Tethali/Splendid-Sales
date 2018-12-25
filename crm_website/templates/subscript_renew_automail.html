@@ -1,0 +1,11 @@
+{% block subject %}Subscription Renewal Reminder{% endblock %}
+{% block plain %}
+  Hi {{username}},
+
+  Your subscription for {{resource}} is about to end. To  continue enjoying our services uninterruped please renew your subscription before {{expiry_date}}.
+        purchase date:{{purchase_date}}
+        expiry date:{{expiry_date}}
+
+  Thanking You,
+  Splendid Sales.
+{% endblock %}

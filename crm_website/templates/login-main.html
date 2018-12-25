@@ -1,0 +1,333 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="{% static 'images/favicon.png' %}">
+	<!-- Author Meta -->
+	<meta name="author" content="CodePixar">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon.png' %}">
+    <title>SPLENDID SALES</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
+		<!--
+		CSS
+		============================================= -->
+		<link rel="stylesheet" href="{% static 'css/linearicons.css' %}">
+		<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+		<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+		<link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+		<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+		<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+		<link rel="stylesheet" href="{% static 'css/lib/main.css' %}">
+
+        <style>
+            .login-box {
+                width: 275px;
+                padding: 15px;
+                background-color: lightgrey;
+                position: absolute;
+            }
+        </style>
+	</head>
+	<body>
+		<div class="main-wrapper-first">
+			<header>
+				<div class="container">
+					<div class="header-wrap">
+						<div class="header-top d-flex justify-content-between align-items-center">
+							<div class="logo">
+								<a href="index.html"><img src="{% static 'images/favicon.png' %}" alt=""></a>
+							</div>
+							<div class="main-menubar d-flex align-items-center">
+								<nav class="hide">
+									<div class = "login-box">
+										<form method="post">
+	                                    <center>
+                                            <h4>Login</h4>
+                                        </center>
+                                        {{form.as_p}}
+                                        {% csrf_token %}
+                                        <input type="checkbox"> &nbsp;&nbsp; Remember Me <br><br>
+                                        <a href="#">Forgot password</a>
+								        <br>
+                                        <center>
+                                            <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Sign in</button>
+                                        </center>
+                                        <br>
+                                        <div class="register-link m-t-15 ">
+                                            <p>Don't have account?<a href="#"> Sign Up</a></p>
+                                        </div>
+											</form>
+                                    </div>
+								</nav>
+								<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="banner-area">
+				<div class="container">
+					<div class="row justify-content-center height align-items-center">
+						<div class="col-lg-8">
+							<div class="banner-content text-center">
+								<center><img src="{% static 'images/newlogotext-homepage.png' %}" alt=""></center>
+								<h1 class="text-white " style="font-family:Georgia;">Re-Imagining The Way</h1>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Start Feature Area -->
+			<section class="featured-area">
+				<div class="container">
+					<div class="row">
+
+							<div class="single-feature d-flex flex-wrap justify-content-center">
+
+                                <div class="icon d-flex align-items-center justify-content-center">
+									<span class="lnr lnr-sun"></span>
+								</div>
+								<div class="desc">
+									<h4 class="title text-uppercase">Splendid Sales</h4>
+									<p>Splendid Sales is a CRM platform that manages the sales interaction between the company’s sales team and its customers with the help of the information provided by the company, like the company’s progress, customer subscription data, etc. Splendid Sales follows IDIC model i.e., Identification, Development, Interaction and Customize. Splendid Sales analyzes the customers, thus helping the employees understand the customer needs in a better way and serves the customers profitably.</p>
+								</div>
+							</div>
+
+					</div>
+				</div>
+			</section>
+			<!-- End Feature Area -->
+			<!-- Start Service Area -->
+			<section class="service-area">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<div class="section-title text-center">
+								<h3 class="text-white">Our Offered Services</h3>
+								<span class="text-white text-uppercase">Re-imagining the way</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 col-sm-6 ">
+							<div class="single-service">
+								<div class="thumb" style="background: url({% static 'images/manage-leads.jpg' %});"></div>
+								<div class="desc">
+									<h6 class="text-uppercase text-white">Manage Leads</h6>
+									<p class="text-white">Manages the sales interaction between sales teams and customers and manage the leads</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service">
+								<div class="thumb" style="background: url({% static 'images/track-progress.jpg' %});"></div>
+								<div class="desc">
+									<h6 class="text-uppercase text-white">Track Progress</h6>
+									<p class="text-white">Tracks the progress and presents in an attractive & easily understandable way</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service">
+								<div class="thumb" style="background: url({% static 'images/emails.png' %});"></div>
+								<div class="desc">
+									<h6 class="text-uppercase text-white">Email Alerts</h6>
+									<p class="text-white">Send customizable mails automatically on certain triggers & accomplishments</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service">
+								<div class="thumb" style="background: url({% static 'images/referral-bonus.jpg' %});"></div>
+								<div class="desc">
+									<h6 class="text-uppercase text-white">Pay Referral Bonus</h6>
+									<p class="text-white">Using Smart Contracts based on Blockchain for paying out a referral bonus</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service">
+								<div class="thumb" style="background: url({% static 'images/sentiments.png' %});"></div>
+								<div class="desc">
+									<h6 class="text-uppercase text-white">Sentimental Analysis</h6>
+									<p class="text-white">Using Natural Language Processing for sentiment analysis on mails using Gmail API</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End Service Area -->
+            <!-- Image Gallery -->
+            <section class="subscription-area">
+				<div class="container">
+                    <h3>Image Gallery</h3>
+                    <div class="row gallery-item">
+                        <div class="col-md-4">
+                            <a href="{% static 'images/g1.jpg' %}" class="img-pop-up"><div class="single-gallery-image" style="background: url({% static 'images/g1.jpg' %});"></div></a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="{% static 'images/g2.png' %}" class="img-pop-up"><div class="single-gallery-image" style="background: url({% static 'images/g2.png' %});"></div></a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="{% static 'images/g3.jpg' %}" class="img-pop-up"><div class="single-gallery-image" style="background: url({% static 'images/g3.jpg' %});"></div></a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="{% static 'images/g4.jpg' %}" class="img-pop-up"><div class="single-gallery-image" style="background: url({% static 'images/g4.jpg' %});"></div></a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="{% static 'images/g5.png' %}" class="img-pop-up"><div class="single-gallery-image" style="background: url({% static 'images/g5.png' %});"></div></a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="{% static 'images/g6.jpg' %}" class="img-pop-up"><div class="single-gallery-image" style="background: url({% static 'images/g6.jpg' %});"></div></a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="{% static 'images/g7.png' %}" class="img-pop-up"><div class="single-gallery-image" style="background: url({% static 'images/g7.png' %});"></div></a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="{% static 'images/g8.png' %}" class="img-pop-up"><div class="single-gallery-image" style="background: url({% static 'images/g8.png' %});"></div></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Image Gallery -->
+			<!-- Start Story Area -->
+			<section class="story-area">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-3">
+							<div class="story-title">
+								<h3 class="text-white">Our Untold Story</h3>
+								<span class="text-uppercase text-white">Re-imagining the way</span>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="story-box">
+								<h6 class="text-uppercase">Levaraging Advanced Capabilities To Drive Efficiencies For The Contact Center</h6>
+								<p>CRM vendors crossed those boundaries long ago with a range of capabilities that organize, automate and coordinate sales, marketing, customer service anf technical support. They've paved a road to operational efficiency that help contact centers serve their customers in excellence, across media, while delivering a more satisfying experience for their agents and organizational peers. And all of that drives a sweeter bottom line for the center and the enterprise.</p>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End Story Area -->
+			<!-- Start Subscription Area -->
+			<section class="subscription-area">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<div class="section-title text-center">
+								<h3>Subscribe for our Newsletter</h3>
+								<span class="text-uppercase">Re-imagining the way</span>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-lg-6">
+							<div id="mc_embed_signup">
+								<form target="_blank" novalidate action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&id=92a4423d01" method="get" class="subscription relative">
+									<input type="email" name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required>
+									<div style="position: absolute; left: -5000px;">
+										<input type="text" name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="">
+									</div>
+									<button class="primary-btn hover d-inline-flex align-items-center"><span class="mr-10">Get Started</span><span class="lnr lnr-arrow-right"></span></button>
+									<div class="info"></div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End Subscription Area -->
+			<!-- Start Footer Widget Area -->
+			<section class="footer-widget-area">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="single-widget d-flex flex-wrap justify-content-between">
+								<div class="icon d-flex align-items-center justify-content-center">
+									<span class="lnr lnr-pushpin"></span>
+								</div>
+								<div class="desc">
+								<font color="black">	<h6 class="title text-uppercase">Address</h6>
+									<p>Jayabheri (HYD11), <br> Jayraj Orange Towers, <br>Road No. 2, Financial District, <br> Nanakramguda, Hyderabad.</p>
+								</font>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="single-widget d-flex flex-wrap justify-content-between">
+								<div class="icon d-flex align-items-center justify-content-center">
+									<span class="lnr lnr-earth"></span>
+								</div>
+								<div class="desc">
+									<h6 class="title text-uppercase">Email Address</h6>
+									<div class="contact">
+										<a href="mailto:crmwebsite2018@gmail.com">crmwebsite2018@gmail.com</a> <br>
+                                    </div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="single-widget d-flex flex-wrap justify-content-between">
+								<div class="icon d-flex align-items-center justify-content-center">
+									<span class="lnr lnr-phone"></span>
+								</div>
+								<div class="desc">
+									<h6 class="title text-uppercase">Phone Number</h6>
+									<div class="contact">
+										<a href="tel:04029475943">040 2947 5943</a> <br>
+										<a href="tel:9758467265">+91 97584 67265</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End Footer Widget Area -->
+			<!-- Start footer Area -->
+			<footer>
+				<div class="container">
+					<div class="footer-content d-flex justify-content-between align-items-center flex-wrap">
+						<div class="logo">
+							<img src="{% static 'images/logotext.png' %}" alt="">
+						</div>
+						<div class="footer-social">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-dribbble"></i></a>
+							<a href="#"><i class="fa fa-behance"></i></a>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- End footer Area -->
+		</div>
+
+
+
+
+		<script src="{% static 'js/jquery-2.2.4homepage.min.js' %}"></script>
+		<script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js' %}" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="{% static 'js/bootstraphomepage.min.js' %}"></script>
+		<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+		<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+		<script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+		<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+		<script src="{% static 'js/main.js' %}"></script>
+	</body>
+</html>
